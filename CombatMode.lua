@@ -246,7 +246,7 @@ end
 function CombatMode:OnEnable()
 	-- Register Events
 	self:RegisterEvent("PLAYER_TARGET_CHANGED", CombatMode_OnEvent)
-	self:RegisterEvent("CURSOR_UPDATE", CombatMode_OnEvent)
+	self:RegisterEvent("UPDATE_MOUSEOVER_UNIT", CombatMode_OnEvent)
 	self:RegisterEvent("PET_BAR_UPDATE", CombatMode_OnEvent)
 	self:RegisterEvent("ACTIONBAR_UPDATE_STATE", CombatMode_OnEvent)
 	self:RegisterEvent("QUEST_FINISHED", CombatMode_OnEvent)
@@ -372,7 +372,7 @@ function CombatMode_OnEvent(event, ...)
 			-- target changed		
 		end
 
-		if event == "CURSOR_UPDATE" and not CombatMode:checkForDisableState() then
+		if event == "UPDATE_MOUSEOVER_UNIT" and not CombatMode:checkForDisableState() then
 			CursorActionActive = true
 		end
 
@@ -381,7 +381,7 @@ function CombatMode_OnEvent(event, ...)
 			ResetCursor()
 		end
 
-		if event == "PET_BAR_UPDATE" and CursorActionActive then
+		if event == "PET_BAR_UPDATE" and CursorActionActive thenZZ
 			CursorActionActive = false
 			ResetCursor()
 		end
