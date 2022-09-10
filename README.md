@@ -2,4 +2,4 @@
 Unofficial Update to CombatMode addon
 
 
-Just FYI, this will happily be removed at the request of author, otherwise, this is just a stop-gap for players to use in the meantime, as this addon is not been updated in a couple of years.
+This is just a stop-gap for players to use in the meantime, as this addon has not been updated in a couple of years. Once the addon is officially updated this build will be redundant.
