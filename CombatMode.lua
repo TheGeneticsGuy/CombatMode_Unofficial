@@ -381,7 +381,7 @@ function CombatMode_OnEvent(event, ...)
 			ResetCursor()
 		end
 
-		if event == "PET_BAR_UPDATE" and CursorActionActive thenZZ
+		if event == "PET_BAR_UPDATE" and CursorActionActive then
 			CursorActionActive = false
 			ResetCursor()
 		end
